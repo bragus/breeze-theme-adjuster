@@ -1,0 +1,1 @@
+Editor pessoal em Rust para Plasma 6.8.2. Interface em português, simples e funcional, preservando Breeze, menu à esquerda e tarefas sem agrupar. Aplicação explícita, prévia ilustrativa e restauração da configuração capturada antes da primeira aplicação.

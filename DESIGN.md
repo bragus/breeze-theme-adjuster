@@ -1,0 +1,1 @@
+Interface de operação: uma janela escura compacta, tipografia legível, controles padrão egui, prévia do painel acima dos controles. Cinzas do Breeze e cor de destaque atual do sistema. Raio livre apenas no painel e tarefas; janelas usam a opção real do Breeze Enhanced. Botões Aplicar e Restaurar sempre visíveis.

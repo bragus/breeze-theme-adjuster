@@ -1,0 +1,10 @@
+<?xml version="1.0"?><kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"><kcfgfile name=""/><group name="General">
+<entry name="center" type="Bool"><default>true</default></entry>
+<entry name="radius" type="Int"><default>8</default></entry>
+<entry name="style" type="Int"><default>1</default></entry>
+<entry name="alpha" type="Int"><default>22</default></entry>
+<entry name="accent" type="String"><default>#7a7d82</default></entry>
+<entry name="leftId" type="Int"><default>0</default></entry>
+<entry name="rightId" type="Int"><default>0</default></entry>
+<entry name="diagnostics" type="String"><default/></entry>
+</group></kcfg>

@@ -1,0 +1,1 @@
+{"KPlugin":{"Id":"local.breezecompact","Name":"Breeze Compact","Description":"Centralização e fundos das tarefas","Version":"1.0","License":"MIT","Authors":[{"Name":"Breeze Editor"}]},"KPackageStructure":"Plasma/Applet","X-Plasma-API-Minimum-Version":"6.0","X-Plasma-Provides":["org.kde.plasma.multitasking"]}
