@@ -15,6 +15,6 @@ p.height=c.height;
 let rest=ws.filter(w=>![launcher.id,task.id,helper.id,left.id,right.id].includes(w.id)).sort((a,b)=>a.index-b.index);
 let order=[launcher,left,task,right,...rest,helper];order.forEach((w,i)=>w.index=i);
 task.currentConfigGroup=['General'];task.writeConfig('groupingStrategy',0);task.writeConfig('fill',false);task.writeConfig('iconSpacing',c.app_spacing);task.reloadConfig();
-for(const w of ws)if(w.type==='org.kde.plasma.systemtray'){w.currentConfigGroup=['General'];w.writeConfig('scaleIconsToFit',!c.small_tray);w.writeConfig('iconSpacing',c.tray_spacing);w.reloadConfig();}
-for(const [k,v] of Object.entries({center:c.center,radius:c.radius,style:c.style,alpha:c.alpha,accent:c.accent,leftId:left.id,rightId:right.id})){helper.writeConfig(k,v);}helper.reloadConfig();
+for(const w of ws)if(w.type==='org.kde.plasma.systemtray'){w.currentConfigGroup=['General'];w.writeConfig('scaleIconsToFit',true);w.writeConfig('iconSpacing',c.tray_spacing);w.reloadConfig();}
+for(const [k,v] of Object.entries({showTitles:c.show_titles,titleWidth:c.title_width,panelHeight:c.height,center:c.center,radius:c.radius,style:c.style,alpha:c.alpha,accent:c.accent,gray:c.gray,inactiveAlpha:c.inactive_alpha,traySize:c.tray_size,trayGap:c.tray_gap,panelGap:c.panel_gap,leftSpace:c.left_space,rightSpace:c.right_space,centerOffset:c.center_offset,timeSize:c.time_size,dateSize:c.date_size,clockCustom:c.clock_custom,leftId:left.id,rightId:right.id})){helper.writeConfig(k,v);}helper.reloadConfig();
 print('OK');

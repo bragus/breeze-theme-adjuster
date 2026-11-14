@@ -7,4 +7,19 @@
 <entry name="leftId" type="Int"><default>0</default></entry>
 <entry name="rightId" type="Int"><default>0</default></entry>
 <entry name="diagnostics" type="String"><default/></entry>
+<entry name="gray" type="Int"><default>220</default></entry>
+<entry name="inactiveAlpha" type="Int"><default>6</default></entry>
+<entry name="traySize" type="Int"><default>18</default></entry>
+<entry name="trayGap" type="Int"><default>4</default></entry>
+<entry name="panelGap" type="Int"><default>4</default></entry>
+<entry name="leftSpace" type="Int"><default>0</default></entry>
+<entry name="rightSpace" type="Int"><default>0</default></entry>
+<entry name="centerOffset" type="Int"><default>0</default></entry>
+<entry name="timeSize" type="Int"><default>14</default></entry>
+<entry name="dateSize" type="Int"><default>11</default></entry>
+<entry name="clockCustom" type="Bool"><default>true</default></entry>
+<entry name="probe" type="Int"><default>0</default></entry>
+<entry name="panelHeight" type="Int"><default>40</default></entry>
+<entry name="showTitles" type="Bool"><default>false</default></entry>
+<entry name="titleWidth" type="Int"><default>160</default></entry>
 </group></kcfg>

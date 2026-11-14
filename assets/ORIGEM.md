@@ -1,0 +1,1 @@
+tasks-clear.svg deriva do tasks.svgz do Breeze instalado em /usr/share/plasma/desktoptheme/default/widgets/tasks.svgz. As molduras normal/focus/hover/attention/minimized foram tornadas transparentes, preservando IDs, margens, progresso e expansores. Fonte: KDE/libplasma, src/desktoptheme/breeze/widgets/tasks.svg. Apenas usado no estilo local do usuário.

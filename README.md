@@ -7,13 +7,18 @@ Abra `abrir.sh`, ou procure **Breeze compacto** no menu de aplicativos.
 ## Controles
 
 - Painel: altura de 28–48 px e raio de 2–16 px, com fallback para os demais elementos do Breeze.
-- Tarefas centralizadas, menu na esquerda e **não agrupar** sempre preservado ao aplicar. Quando faltar espaço, a centralização cede para evitar sobreposição.
-- Tray: tamanho menor nativo do Plasma, limitado a 22 px, e espaçamento independente. Não é um seletor arbitrário de tamanho em pixels.
+- Tarefas centralizadas ou à esquerda, sempre com o mesmo estilo, raio e largura dos botões. Menu na esquerda e **não agrupar** preservados. Quando faltar espaço, a centralização cede para evitar sobreposição.
+- **Mostrar títulos das janelas**: usa o texto nativo de cada janela no mesmo gerenciador de ícones; os pinados são mantidos. A largura máxima dos botões com título vai de 80 a 240 px, com reticências quando necessário.
+- Tray: ícones de 12–32 px e espaço de 0–24 px entre eles, independentes da altura do painel. O tamanho fica limitado à área disponível no painel; os ícones do pop-up de itens ocultos mantêm o tamanho nativo.
 - Ícones de barras dos aplicativos Qt/KDE: 16, 22, 24 ou 32 px. Reabra os aplicativos para refletir o ajuste. Aplicativos com interface própria podem ignorá-lo.
 - Breeze Enhanced: ativar/desativar cantos arredondados; o tema instalado não expõe um raio variável para janelas. O raio ajustável do editor se aplica ao painel e às tarefas, não ao conteúdo de todos os aplicativos.
-- Fundos: Breeze original, suave com traço, suave com ponto, contorno ou neutro; cor e opacidade ajustáveis. Alertas de atenção continuam em laranja.
+- Fundos: Breeze original, suave com traço, suave com ponto, contorno ou neutro; destaque, opacidade ativa e inativa e tom de cinza do modo Neutro ajustáveis. Alertas continuam em laranja.
+- Espaçadores: mínimo após o menu e à direita das tarefas; espaço entre widgets e deslocamento do centro. Com centralização ligada, os espaçadores continuam flexíveis.
+- Relógio: tamanhos separados de hora e data, em pixels. As proporções são reduzidas quando a soma dos textos não cabe na altura do painel. Formatos, fuso, atualização e clique para abrir o calendário são mantidos. Desative o tamanho personalizado para usar o relógio nativo.
 
-A prévia é ilustrativa. **Aplicar** altera o painel escolhido; o estilo do Plasma e os tamanhos de barras são configurações globais. O editor não precisa ficar aberto. Um widget QML de aproximadamente 75 linhas cuida da centralização e dos fundos; ele usa a árvore visual interna do Plasma e foi verificado na versão 6.8.2. Uma futura atualização do Plasma pode exigir adaptar esse widget.
+A prévia é ilustrativa. **Aplicar** altera o painel escolhido; o estilo do Plasma e os tamanhos de barras são configurações globais. O editor não precisa ficar aberto. Um pequeno auxiliar QML cuida da centralização, dos fundos, da tray e do relógio; ele usa a árvore visual interna do Plasma e foi verificado na versão 6.8.2. Uma futura atualização do Plasma pode exigir adaptar esse widget.
+
+As tarefas são acompanhadas por sinais de criação/remoção. Não há uma varredura periódica do painel em repouso, nem gravações de diagnóstico em loop. O posicionamento usa medidas estáveis, sem animação adicional do espaçador: as animações nativas do Plasma continuam responsáveis pelas tarefas. No modo personalizado, o SVG do tema já contém molduras transparentes desde o primeiro quadro, evitando que o fundo Breeze antigo pisque enquanto o app está iniciando. Progresso e expansores foram preservados.
 
 ## Restaurar
 
